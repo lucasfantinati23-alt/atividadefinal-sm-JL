@@ -16,7 +16,7 @@ st.set_page_config(layout='wide')
 st.title('Previsão de Inadimplência de Clientes em Tempo Real')
 
 # Realiza o carregamento da base de dados de inadimplência a partir da planilha copiada
-dados = pd.read_excel('/content/inadimplencia-clientes.xlsx')
+dados = pd.read_excel('inadimplencia-clientes.xlsx')
 # Executa a limpeza básica excluindo linhas duplicadas remanescentes da planilha
 dados = dados.drop_duplicates()
 # Executa a limpeza excluindo todas as ocorrências de registros com valores faltantes
